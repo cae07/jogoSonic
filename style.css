@@ -24,13 +24,28 @@ body {
   text-align: center;
 }
 
+.start-button {
+  background-color: green;
+  border-radius: 15px;
+  color: whitesmoke;
+  display: flex;
+  text-shadow: 5px 5px 8px black;
+  font-size: 80px;
+  font-weight: 900;
+  height: 160px;
+  margin-left: 400px;
+  margin-top: 15px;
+  padding: 30px;
+  width: 500px;
+}
+
 .sonic {
-  bottom: 10px;
+  bottom: 30px;
   position: absolute;
 }
 
 .sonicObstacle {
-  bottom: 10px;
+  bottom: 30px;
   background-color: red;
   border-radius: 50%;
   height: 60px;
@@ -43,9 +58,15 @@ body {
   color: white;
   align-items: flex-start;
   display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
 .placar {
   font-size: 50px;
   margin-left: 20px;
+}
+
+.audio {
+  display: flex;
 }

@@ -1,6 +1,7 @@
 const sonicRunning = document.querySelector('.sonic'); // seleciona o sonic
 const background = document.querySelector('.background');
 const placar = document.querySelector('.placar');
+const botao = document.querySelector('.start-button'); // captura o botao start
 let isJumping = false; // verifica se está pulando
 let position = 0; // posição do sonic
 
@@ -68,12 +69,10 @@ const createObstacle = () => {
   setTimeout(createObstacle, randomTime);
 }
 
-createObstacle();
+botao.addEventListener('click', () => { // botao para iniciar os obstaculos
+  createObstacle();
+  background.removeChild(botao);
+})
 
 // define um evento de clicar na barra de espaço
 document.addEventListener('keydown', handleKeyCode);
-
-const test = document.getElementsByClassName('audio');
-window.onload(
-  play(audio)
-)
