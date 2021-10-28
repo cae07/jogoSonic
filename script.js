@@ -69,9 +69,13 @@ const createObstacle = () => {
   setTimeout(createObstacle, randomTime);
 }
 
+const sound = document.querySelector('.audio');
+
 botao.addEventListener('click', () => { // botao para iniciar os obstaculos
   createObstacle();
   background.removeChild(botao);
+  sound.muted = false;
+  sound.play();
 })
 
 // define um evento de clicar na barra de espaço
