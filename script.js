@@ -72,3 +72,8 @@ createObstacle();
 
 // define um evento de clicar na barra de espaço
 document.addEventListener('keydown', handleKeyCode);
+
+const test = document.getElementsByClassName('audio');
+window.onload(
+  play(audio)
+)
