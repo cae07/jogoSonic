@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slideRight {
+  from {
+    background-position: 70000%;
+  }
+
+  to {
+    background-position: 0;
+  }  
+}
+
+body {
+  animation: slideRight 600s infinite linear;
+  background-image: url('midia/fundo_hq.jpg');
+  background-repeat: repeat-x;
+  background-size: 75%;
+  color: white;
+  font-size: 75px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.sonic {
+  bottom: 10px;
+  position: absolute;
+}
+
+.sonicObstacle {
+  bottom: 10px;
+  background-color: red;
+  border-radius: 50%;
+  height: 60px;
+  left: 500px;
+  position: absolute;
+  width: 60px;
+}
+
+.container-placar {
+  color: white;
+  align-items: flex-start;
+  display: flex;
+}
+
+.placar {
+  font-size: 50px;
+  margin-left: 20px;
+}
