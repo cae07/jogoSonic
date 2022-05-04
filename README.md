@@ -23,3 +23,5 @@
 ##### Idealizado apenas para telas de computadores
 
 ### Link para o projeto
+
+https://jogo-sonic-5dx2dji1k-cae07.vercel.app/
